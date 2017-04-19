@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>Tic Tac Toe Game</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+		<!-- My CSS file -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<!-- JS logic -->
+		<script src="script.js"></script> 
+	</head>
+	
+	
+	<body>
+	
+		<div id="outerBox">
+			<div id="gameTitle">Tic Tac Toe</div>
+				<div id="innerBox">
+		
+					<!-- main menu -->
+					<div id="menuDiv">
+						<div class="menuTitle">How do you want to play?</div>
+						<div class="button" id="pvcButton">player vs computer</div>
+						<div class="button" id="pvpButton">player vs player</div>
+					</div>
+					
+					<!-- screen where you select symbol (x or o) -->
+					<div id="symbolSelectionDiv">
+						<div class="menuTitle" id="symbolSelectionTitle">Select your side</div>
+						<div class="button symbolButton" id="xButton">X</div>
+						<div class="button symbolButton" id="oButton">O</div>
+						<div class="backToMenuButton">&#9664; back to menu</div>
+					</div>
+					
+					<!-- game -->
+					<div id="gameDiv">
+						<!-- game are with bars and fields -->
+						<div id="gameArray">
+							<div id="bar1"></div>
+							<div id="bar2"></div>
+							<div id="bar3"></div>
+							<div id="bar4"></div>
+							
+							<div class="field" id="field1"></div>
+							<div class="field" id="field2"></div>
+							<div class="field" id="field3"></div>
+							<div class="field" id="field4"></div>
+							<div class="field" id="field5"></div>
+							<div class="field" id="field6"></div>
+							<div class="field" id="field7"></div>
+							<div class="field" id="field8"></div>
+							<div class="field" id="field9"></div>
+						</div>
+						
+						<!-- back to menu option and panel with score and whose turn -->
+						<div class="backToMenuButton">&#9664; back to menu</div>
+						<div id="infoPanel"></div>
+						
+						<!-- screen displayed after a game ended -->
+						<div id="endScreen">
+							<div id="endScreenMessage"></div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<!-- author info -->
+				<div id="myBox">
+					Game by Michał Wiśniewski (MW Projects)
+				</div>
+				
+			</div>
+		
+	</body>
+<html>

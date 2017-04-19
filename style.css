@@ -1,0 +1,257 @@
+/* --- general --- */
+body {
+	background-color: #B1BBCC;
+	color: #000;
+	text-align: center;
+	font-family: Lucida Sans Unicode;
+}
+
+#outerBox {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	margin-top: 100px;
+	background-color: #405985;
+	border-radius: 20px;
+	border-bottom: 4px solid #000;
+}
+
+#innerBox {
+	position: absolute;
+	top: 35px;
+	left: 35px;
+	width: 330px;
+	height: 330px;
+	background-color: #aaa;
+	background-color: #7188B0;
+	border-radius: 10px;
+	border: 1px solid #3B4A63;
+	border-top: 3px solid #000;
+}
+
+#gameTitle {
+	font-size: 23px;
+	color: #B1BBCC;
+}
+
+#myBox {
+	color: #7188B0;
+	font-size: 13px;
+	margin: auto;
+	margin-top: 336px;
+}
+
+
+
+/* --- menu --- */
+#menuDiv {
+	display: block;
+}
+
+.menuTitle {
+	color: #B1BBCC;
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+.button {
+	width: 180px;
+	height: 40px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #405985;
+	color: #B1BBCC;
+	line-height: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.button:hover {
+	color: #C3CCDB;
+	background-color: #486494;
+	transition: all 0.3s;
+}
+
+
+
+/* --- symbol selection screen --- */
+#symbolSelectionDiv {
+	display: none;
+}
+
+.symbolButton {
+	display: inline-block;
+	width: 50px;
+	font-size: 24px;
+}
+
+.backToMenuButton {
+	color: #B1BBCC;
+	font-size: 13px;
+	position: absolute;
+	bottom: 3px;
+	right: 8px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.backToMenuButton:hover {
+	color: #C3CCDB;
+	transition: all 0.3s;
+}
+
+
+
+/* --- game screen --- */
+#gameDiv {
+	display: none;
+}
+
+#gameArray {
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	margin-top: 5px;
+	position: relative;
+}
+
+#infoPanel {
+	color: #B1BBCC;
+	font-size: 13px;
+	position: absolute;
+	bottom: 3px;
+	left: 8px;
+}
+
+#bar1 {
+	width: 290px;
+	height: 5px;
+	background-color: #405985;
+	position: absolute;
+	top: 98px;
+	left: 5px;
+}
+
+#bar2 {
+	width: 290px;
+	height: 5px;
+	background-color: #405985;
+	position: absolute;
+	top: 198px;
+	left: 5px;
+}
+
+#bar3 {
+	width: 5px;
+	height: 290px;
+	background-color: #405985;
+	position: absolute;
+	top: 5px;
+	left: 98px;
+}
+
+#bar4 {
+	width: 5px;
+	height: 290px;
+	background-color: #405985;
+	position: absolute;
+	top: 5px;
+	left: 198px;
+}
+
+.field {
+	width: 89px;
+	height: 89px;
+	position: absolute;
+	color: #405985;
+	font-size: 60px;
+	line-height: 89px;
+	cursor: pointer;
+	transition: all 0.3s;
+	-moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+	-ms-user-select: none;
+  user-select: none;
+}
+
+.fieldHover {
+	background-color: #B1BBCC;
+	transition: all 0.3s;
+}
+
+.fieldMarked {
+	background-color: #B1BBCC;
+	transition: all 0.3s;
+}
+
+#field1 {
+	top: 6px;
+	left: 6px;
+}
+
+#field2 {
+	top: 6px;
+	left: 106px;
+}
+
+#field3 {
+	top: 6px;
+	left: 206px;
+}
+
+#field4 {
+	top: 106px;
+	left: 6px;
+}
+
+#field5 {
+	top: 106px;
+	left: 106px;
+}
+
+#field6 {
+	top: 106px;
+	left: 206px;
+}
+
+#field7 {
+	top: 206px;
+	left: 6px;
+}
+
+#field8 {
+	top: 206px;
+	left: 106px;
+}
+
+#field9 {
+	top: 206px;
+	left: 206px;
+}
+
+
+
+/* --- screen shown after a game ended --- */
+#endScreen {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+	opacity: 0;
+	transition: all 1s;
+}
+
+#endScreenMessage {
+	margin-top: 130px;
+	color: #B1BBCC;
+	font-size: 30px;
+}
